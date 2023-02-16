@@ -1,129 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+    <title>Omnifood starter</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/main.css" />
-  <link
-    href="https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic"
-    rel="stylesheet" />
-  <title>Omnifood starter</title>
-</head>
-
-<body>
-  <!-- NAVBAR -->
-  <div class="container">
-    <nav class="navbar row">
-      <div class="navbar__logo-box">
-        <img class="navbar__logo-img" src="img/omnifood-logo.png"
-          alt="Omnifood logo" />
-      </div>
-
-      <ul class="navbar__nav navbar__nav--row">
-        <li class="navbar__nav__item">
-          <a href="#" class="navbar__nav__link">How it works</a>
-        </li>
-
-        <li class="navbar__nav__item">
-          <a href="#" class="navbar__nav__link">Meals</a>
-        </li>
-        <li class="navbar__nav__item">
-          <a href="#" class="navbar__nav__link">Testimonials</a>
-        </li>
-        <li class="navbar__nav__item">
-          <a href="#" class="navbar__nav__link">Try for free</a>
-        </li>
-      </ul>
-
-      <ul class="navbar__nav navbar__nav--column d-none">
-        <li class="navbar__nav__item">
-          <a href="#" class="navbar__nav__link">How it works</a>
-        </li>
-
-        <li class="navbar__nav__item">
-          <a href="#" class="navbar__nav__link">Meals</a>
-        </li>
-        <li class="navbar__nav__item">
-          <a href="#" class="navbar__nav__link">Testimonials</a>
-        </li>
-        <li class="navbar__nav__item">
-          <a href="#" class="navbar__nav__link">Try for free</a>
-        </li>
-      </ul>
-
-      <button class="btn navbar__btn">
-        <div class="navbar__btn--burger">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="navbar__btn-icon">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg>
-        </div>
-        <div class="navbar__btn--close d-none">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="navbar__btn-icon">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </div>
-      </button>
-    </nav>
-  </div>
-  <!-- NAVBAR END-->
-
-  <!-- HEADER -->
-  <header class="header">
-    <div class="header--sm">
-      <div class="container">
-        <div class="box">
-          <img src="img/hero.png" alt="" class="header--sm__img" />
+  <body>
+    <!-- NAVBAR -->
+    <div class="container">
+      <nav class="navbar row">
+        <div class="navbar__logo-box">
+          <img
+            class="navbar__logo-img"
+            src="img/omnifood-logo.png"
+            alt="Omnifood logo"
+          />
         </div>
 
-        <div class="row">
-          <h1 class="h1">
-            A healthy meal delivered to your door, every single day
-          </h1>
-        </div>
-        <div class="row">
-          <p class="h1-subhead">
-            The smart 365-days-per-year food subscription that will make you
-            eat healthy again. Tailored to your personal tastes and
-            nutritional needs.
-          </p>
-        </div>
-          <div class="header__btn-box">         
-            <a href="#" class="btn btn--accent">Start eating well</a>       
+        <ul class="navbar__nav navbar__nav--row">
+          <li class="navbar__nav__item">
+            <a href="#" class="navbar__nav__link">How it works</a>
+          </li>
+
+          <li class="navbar__nav__item">
+            <a href="#" class="navbar__nav__link">Meals</a>
+          </li>
+          <li class="navbar__nav__item">
+            <a href="#" class="navbar__nav__link">Testimonials</a>
+          </li>
+          <li class="navbar__nav__item">
+            <a href="#" class="navbar__nav__link">Try for free</a>
+          </li>
+        </ul>
+
+        <ul class="navbar__nav navbar__nav--column d-none">
+          <li class="navbar__nav__item">
+            <a href="#" class="navbar__nav__link">How it works</a>
+          </li>
+
+          <li class="navbar__nav__item">
+            <a href="#" class="navbar__nav__link">Meals</a>
+          </li>
+          <li class="navbar__nav__item">
+            <a href="#" class="navbar__nav__link">Testimonials</a>
+          </li>
+          <li class="navbar__nav__item">
+            <a href="#" class="navbar__nav__link">Try for free</a>
+          </li>
+        </ul>
+
+        <button class="btn navbar__btn">
+          <div class="navbar__btn--burger">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="navbar__btn-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </div>
+          <div class="navbar__btn--close d-none">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="navbar__btn-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </div>
+        </button>
+      </nav>
+    </div>
+    <!-- NAVBAR END-->
+
+    <!-- HEADER -->
+    <header class="header">
+      <!-- header-sm -->
+      <div class="header--sm">
+        <div class="container">
+          <div class="box">
+            <img src="img/hero.png" alt="" class="header__img" />
+          </div>
+          <div class="row">
+            <h1 class="h1">
+              A healthy meal delivered to your door, every single day
+            </h1>
+          </div>
+          <div class="row">
+            <p class="h1-subhead">
+              The smart 365-days-per-year food subscription that will make you
+              eat healthy again. Tailored to your personal tastes and
+              nutritional needs.
+            </p>
+          </div>
+          <div class="header__btn-box">
+            <a href="#" class="btn btn--accent">Start eating well</a>
             <a href="#" class="btn btn--ouline">Learn more &darr; </a>
           </div>
           <div class="header__statistics">
-            <p class="header__statistics__text"><span>250,000+</span> meals delivered last year!</p>
-            
-              <div class="header__statistics__people">
-                <img class="header__statistics__img" src="img/customers/customer-1.jpg" alt="Poto of customer 1">
-                <img class="header__statistics__img" src="img/customers/customer-2.jpg" alt="Poto of customer 2">
-                <img class="header__statistics__img" src="img/customers/customer-3.jpg" alt="Poto of customer 3">
-                <img class="header__statistics__img" src="img/customers/customer-4.jpg" alt="Poto of customer 4">
-                <img class="header__statistics__img" src="img/customers/customer-5.jpg" alt="Poto of customer 5">
-                <img class="header__statistics__img" src="img/customers/customer-6.jpg" alt="Poto of customer 6">
-              </div>
-            
-            
+            <p class="header__statistics__text">
+              <span>250,000+</span> meals delivered last year!
+            </p>
+            <div class="header__statistics__people">
+              <img
+                class="header__statistics__img"
+                src="img/customers/customer-1.jpg"
+                alt="Poto of customer 1"
+              />
+              <img
+                class="header__statistics__img"
+                src="img/customers/customer-2.jpg"
+                alt="Poto of customer 2"
+              />
+              <img
+                class="header__statistics__img"
+                src="img/customers/customer-3.jpg"
+                alt="Poto of customer 3"
+              />
+              <img
+                class="header__statistics__img"
+                src="img/customers/customer-4.jpg"
+                alt="Poto of customer 4"
+              />
+              <img
+                class="header__statistics__img"
+                src="img/customers/customer-5.jpg"
+                alt="Poto of customer 5"
+              />
+              <img
+                class="header__statistics__img"
+                src="img/customers/customer-6.jpg"
+                alt="Poto of customer 6"
+              />
+            </div>
           </div>
-  </header>
-  <!-- HEADER END -->
-  <script src="js/main.js"></script>
-</body>
+        </div>
+      </div>
+      <!-- header-sm end -->
 
+      <!-- header-md -->
+      <div class="header--md">
+        <div class="container">
+          <div class="row">
+            <h1 class="h1">
+              A healthy meal delivered to your door, every single day
+            </h1>
+          </div>
+          <div class="row">
+            <p class="h1-subhead">
+              The smart 365-days-per-year food subscription that will make you
+              eat healthy again. Tailored to your personal tastes and
+              nutritional needs.
+            </p>
+          </div>
+          <div class="box">
+            <img src="img/hero.png" alt="" class="header__img" />
+          </div>
+
+          <div class="header__statistics">
+            <p class="header__statistics__text">
+              <span>250,000+</span> meals delivered last year!
+            </p>
+            <div class="header__statistics__people">
+              <img
+                class="header__statistics__img"
+                src="img/customers/customer-1.jpg"
+                alt="Poto of customer 1"
+              />
+              <img
+                class="header__statistics__img"
+                src="img/customers/customer-2.jpg"
+                alt="Poto of customer 2"
+              />
+              <img
+                class="header__statistics__img"
+                src="img/customers/customer-3.jpg"
+                alt="Poto of customer 3"
+              />
+              <img
+                class="header__statistics__img"
+                src="img/customers/customer-4.jpg"
+                alt="Poto of customer 4"
+              />
+              <img
+                class="header__statistics__img"
+                src="img/customers/customer-5.jpg"
+                alt="Poto of customer 5"
+              />
+              <img
+                class="header__statistics__img"
+                src="img/customers/customer-6.jpg"
+                alt="Poto of customer 6"
+              />
+            </div>
+          </div>
+
+          <div class="header__btn-box">
+            <a href="#" class="btn btn--accent">Start eating well</a>
+            <a href="#" class="btn btn--ouline">Learn more &darr; </a>
+          </div>
+        </div>
+      </div>
+      <!-- header-md end -->
+
+      <!-- header-lg -->
+      <div class="header--lg">
+        <div class="container">
+          <div class="box">
+            <img src="img/hero.png" alt="" class="header__img" />
+          </div>
+          <div class="row">
+            <h1 class="h1">
+              A healthy meal delivered to your door, every single day
+            </h1>
+          </div>
+          <div class="row">
+            <p class="h1-subhead">
+              The smart 365-days-per-year food subscription that will make you
+              eat healthy again. Tailored to your personal tastes and
+              nutritional needs.
+            </p>
+          </div>
+          <div class="header__btn-box">
+            <a href="#" class="btn btn--accent">Start eating well</a>
+            <a href="#" class="btn btn--ouline">Learn more &darr; </a>
+          </div>
+          <div class="header__statistics">
+            <p class="header__statistics__text">
+              <span>250,000+</span> meals delivered last year!
+            </p>
+            <div class="header__statistics__people">
+              <img
+                class="header__statistics__img"
+                src="img/customers/customer-1.jpg"
+                alt="Poto of customer 1"
+              />
+              <img
+                class="header__statistics__img"
+                src="img/customers/customer-2.jpg"
+                alt="Poto of customer 2"
+              />
+              <img
+                class="header__statistics__img"
+                src="img/customers/customer-3.jpg"
+                alt="Poto of customer 3"
+              />
+              <img
+                class="header__statistics__img"
+                src="img/customers/customer-4.jpg"
+                alt="Poto of customer 4"
+              />
+              <img
+                class="header__statistics__img"
+                src="img/customers/customer-5.jpg"
+                alt="Poto of customer 5"
+              />
+              <img
+                class="header__statistics__img"
+                src="img/customers/customer-6.jpg"
+                alt="Poto of customer 6"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- header-lg end -->
+    </header>
+    <!-- HEADER END -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
 
 <!-- 
-  <img src="img/customers/dave.jpg" alt="Picture of Dave">
-              <img src="img/customers/ben.jpg" alt="Picture of Ben">
-              <img src="img/customers/hannah.jpg" alt="Picture of Hannah">
-              <img src="img/customers/steve.jpg" alt="Picture of Steve">
+    <img src="img/customers/dave.jpg" alt="Picture of Dave">
+    <img src="img/customers/ben.jpg" alt="Picture of Ben">
+    <img src="img/customers/hannah.jpg" alt="Picture of Hannah">
+    <img src="img/customers/steve.jpg" alt="Picture of Steve">
  -->
