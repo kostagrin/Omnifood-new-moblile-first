@@ -15,46 +15,4 @@ function toggleMenu() {
   console.log(navbarBtn.children);
 }
 
-// Reset media queries
-function recurse() {}
-window.addEventListener("resize", (e) => {
-  const bp = e.currentTarget.innerWidth;
-  if (bp === 1024) {
-    // if (navColumn.classList.contains("d-none")) return;
-    // navColumn.classList.add("d-none");
-    console.log(bp);
-  }
-});
-
-window.onresize = (e) => {
-  const bp = e.currentTarget.innerWidth;
-  if (bp === 1024) {
-    // if (navColumn.classList.contains("d-none")) return;
-    // navColumn.classList.add("d-none");
-    console.log(bp);
-  }
-};
-
-function getWindowDims() {
-  let docs = document,
-    win = window;
-  let docsEl =
-    docs.compatMode && docs.compatMode === "CSS1Compat"
-      ? docs.documentElement
-      : docs.body;
-  let width = docsEl.clientWidth;
-  let height = docsEl.clientHeight;
-  if (win.innerWidth && width > win.innerWidth) {
-    width = win.innerWidth;
-    height = win.innerHeight;
-  }
-  return {
-    width: width,
-    height: height,
-  };
-}
-
-let win = getWindowDims();
-console.log(win);
-
 navbarBtn.addEventListener("click", toggleMenu);
