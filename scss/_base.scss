@@ -29,6 +29,8 @@ html {
     This approach will make it possible for a user to adjust
     default browser settings to his needs. */
   font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -44,7 +46,11 @@ body {
 // ///////////////  TYPOGRAPHY  ////////////////// //
 // =============================================== //
 .h1 {
-  font-size: var(--fs-44);
+  color: var(--color-text);
+}
+
+.h1-subhead {
+  color: var(--color-text-light);
 }
 // =============================================== //
 // ///////////////  TYPOGRAPHY END  ////////////// //
@@ -54,13 +60,22 @@ body {
 // //////////////  COMPONENTS  /////////////////// //
 // =============================================== //
 // BUTTONS
-.btn {
+.btn,
+.btn:link,
+.btn:visited {
   position: relative;
-  // padding: var(--s-16) var(--s-32);
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
   color: var(--color-text);
   background: none;
   border: none;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
 }
 // BUTTONS END
 // =============================================== //
@@ -68,12 +83,40 @@ body {
 // /////////////////////////////////////////////// //
 // *********************************************** //
 // /////////////////////////////////////////////// //
-// //////////////  HELPERS  /////////////////// //
+// /////////////////  HELPERS  /////////////////// //
 // =============================================== //
 .d-none {
   display: none !important;
 }
+
+.row-center {
+  justify-content: center !important;
+}
 // =============================================== //
-// //////////////  HELPERS END  /////////////// //
+// ////////////////// HELPERS END  /////////////// //
 // /////////////////////////////////////////////// //
 // *********************************************** //
+// /////////////////////////////////////////////// //
+// /////////////////  MIXINS  //////////////////// //
+// =============================================== //
+@mixin center-absolute {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+@mixin img-round {
+  display: block;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+// =============================================== //
+// /////////////////  MIXINS END ///////////////// //
+// /////////////////////////////////////////////// //

@@ -33,6 +33,7 @@
   // COLOR  PALETTE
   --color-main-bg: #fdf2e9;
   --color-text: #333;
+  --color-text-light: #555;
   --color-accent: #e67e22;
   --color-accent-dark: #cf711f;
 }
@@ -40,3 +41,4 @@
 @import "base";
 @import "layout";
 @import "./components/navbar";
+@import "./sections/header";
