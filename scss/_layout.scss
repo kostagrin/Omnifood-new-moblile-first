@@ -1,0 +1,24 @@
+@mixin flex-center {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  @include flex-center();
+}
+
+.col {
+  flex: 1;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  @include flex-center();
+}

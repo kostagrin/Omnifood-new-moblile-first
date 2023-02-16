@@ -1,0 +1,14 @@
+{
+  "name": "omnifood-new-mobile-firs",
+  "version": "1.0.0",
+  "description": "project starter on npm packages, simple grid, mobile-first approach",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass --watch scss/main.scss css/main.css"
+  },
+  "keywords": [
+    "starter"
+  ],
+  "author": "konstantin grinev",
+  "license": "ISC"
+}
