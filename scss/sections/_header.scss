@@ -19,7 +19,7 @@
   .btn--ouline:link,
   .btn--ouline:visited {
     background-color: #fff;
-    color: var(--color-text-light);
+    color: var(--color-text-gray);
   }
 
   .btn--ouline:hover,
@@ -66,7 +66,6 @@
 
     &__btn-box {
       flex-direction: column;
-      align-items: stretch;
       gap: var(--s-16);
       margin-top: var(--s-32);
       padding: 0 var(--s-64);
@@ -133,7 +132,7 @@
 
     &__statistics {
       &__text {
-        font-size: var(--fs-20);
+        font-size: var(--fs-18);
         font-weight: 700;
         margin-top: var(--s-48);
       }
@@ -233,7 +232,7 @@
     &__btn-box {
       margin-top: var(--s-64);
       display: flex;
-      justify-content: start;
+      align-self: start;
       gap: var(--s-32);
     }
 

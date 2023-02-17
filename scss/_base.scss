@@ -65,7 +65,7 @@ body {
 }
 
 .h1-subhead {
-  color: var(--color-text-light);
+  color: var(--color-text-gray);
 }
 
 @media (min-width: 0) {
@@ -90,9 +90,9 @@ body {
     letter-spacing: -0.5px;
     font-weight: 800;
   }
+
   .h2 {
-    font-size: var(--fs-18);
-    font-weight: 500;
+    font-size: var(--fs-20);
   }
 
   .h1-subhead {
@@ -103,28 +103,28 @@ body {
 
 @media (min-width: 768px) {
   .h1 {
-    font-size: var(--fs-44);
+    font-size: var(--fs-36);
     line-height: 1.05;
   }
-  // .h2 {
-  //   font-size: var(--fs-18);
-  //   font-weight: 500;
-  // }
+
+  .h2 {
+    font-size: var(--fs-24);
+  }
 
   .h1-subhead {
-    font-size: var(--fs-20);
     line-height: 1.8;
   }
 }
 
 @media (min-width: 1024px) {
   .h1 {
+    font-size: var(--fs-44);
+    font-weight: 600;
+  }
+
+  .h2 {
     font-size: var(--fs-36);
   }
-  // .h2 {
-  //   font-size: var(--fs-18);
-  //   font-weight: 500;
-  // }
 }
 // =============================================== //
 // ///////////////  TYPOGRAPHY END  ////////////// //
@@ -172,13 +172,40 @@ body {
   flex-direction: column;
 }
 
+.row-stretch {
+  align-items: stretch !important;
+}
 .row-center {
   justify-content: center !important;
 }
-
-.col-top {
-  align-self: top;
+.row-between {
+  justify-content: space-between !important;
 }
+.row-around {
+  justify-content: space-around !important;
+}
+.row-evenly {
+  justify-content: space-evenly !important;
+}
+.row-left {
+  justify-content: flex-start !important;
+}
+.row-right {
+  justify-content: flex-end !important;
+}
+.col-top {
+  align-self: top !important;
+}
+.col-bottom {
+  align-self: bottom !important;
+}
+.col-right {
+  align-self: flex-end !important;
+}
+.col-left {
+  align-self: flex-start !important;
+}
+
 // =============================================== //
 // ////////////////// HELPERS END  /////////////// //
 // /////////////////////////////////////////////// //
@@ -205,10 +232,11 @@ body {
   -o-border-radius: 50%;
 }
 
-@mixin flex-center {
+@mixin row-space-btwn {
   justify-content: space-between;
   align-items: center;
 }
+
 // =============================================== //
 // /////////////////  MIXINS END ///////////////// //
 // /////////////////////////////////////////////// //
