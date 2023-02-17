@@ -40,6 +40,8 @@
   --color-text-gray: #555;
   --color-accent: #e67e22;
   --color-accent-dark: #cf711f;
+  --color-animate-before: #fdf2e9;
+  --color-animate-after: #fae5d3;
 }
 
 @import "base";
@@ -47,3 +49,4 @@
 @import "./components/navbar";
 @import "./sections/header";
 @import "./sections/featured-in";
+@import "./sections/how-it-works";

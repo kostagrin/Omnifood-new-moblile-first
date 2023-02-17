@@ -73,10 +73,28 @@ body {
     font-size: var(--fs-20);
     line-height: 1.4;
   }
+
   .h2 {
     font-size: var(--fs-18);
     font-weight: 500;
   }
+
+  .h3 {
+    font-size: var(--fs-16);
+  }
+
+  .h4 {
+    font-size: var(--fs-14);
+  }
+
+  .h5 {
+    font-size: var(--fs-12);
+  }
+
+  .h6 {
+    font-size: var(--fs-10);
+  }
+
   .h1-subhead {
     font-size: var(--fs-14);
     letter-spacing: 0.5px;
@@ -95,6 +113,22 @@ body {
     font-size: var(--fs-20);
   }
 
+  .h3 {
+    font-size: var(--fs-18);
+  }
+
+  .h4 {
+    font-size: var(--fs-16);
+  }
+
+  .h5 {
+    font-size: var(--fs-14);
+  }
+
+  .h6 {
+    font-size: var(--fs-12);
+  }
+
   .h1-subhead {
     font-size: var(--fs-18);
     line-height: 1.6;
@@ -108,7 +142,23 @@ body {
   }
 
   .h2 {
+    font-size: var(--fs-30);
+  }
+
+  .h3 {
     font-size: var(--fs-24);
+  }
+
+  .h4 {
+    font-size: var(--fs-18);
+  }
+
+  .h5 {
+    font-size: var(--fs-16);
+  }
+
+  .h6 {
+    font-size: var(--fs-14);
   }
 
   .h1-subhead {
@@ -125,7 +175,30 @@ body {
   .h2 {
     font-size: var(--fs-36);
   }
+
+  .h3 {
+    font-size: var(--fs-30);
+  }
+
+  .h4 {
+    font-size: var(--fs-24);
+  }
+
+  .h5 {
+    font-size: var(--fs-20);
+  }
+
+  .h6 {
+    font-size: var(--fs-18);
+  }
 }
+
+@media (min-width: 1200px) {
+  .h1 {
+    font-weight: 700;
+  }
+}
+
 // =============================================== //
 // ///////////////  TYPOGRAPHY END  ////////////// //
 // /////////////////////////////////////////////// //

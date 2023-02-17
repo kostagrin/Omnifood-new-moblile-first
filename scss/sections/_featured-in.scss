@@ -1,5 +1,6 @@
 .featured-in {
-  &__h2 {
+  &__h6 {
+    text-transform: uppercase;
     text-align: center;
     color: var(--color-text-gray);
   }
@@ -18,7 +19,7 @@
 
 @media only screen and (min-width: 0) {
   .featured-in {
-    &__h2 {
+    &__h6 {
       margin: var(--s-12) 0 var(--s-8);
     }
 
@@ -32,7 +33,7 @@
 
 @media only screen and (min-width: 425px) {
   .featured-in {
-    &__h2 {
+    &__h6 {
       margin: var(--s-16) 0 var(--s-12);
     }
 
@@ -46,7 +47,7 @@
 
 @media only screen and (min-width: 768px) {
   .featured-in {
-    &__h2 {
+    &__h6 {
       margin: var(--s-16) 0 var(--s-12);
     }
 
@@ -58,7 +59,19 @@
 
 @media only screen and (min-width: 1024px) {
   .featured-in {
-    &__h2 {
+    &__h6 {
+      margin: var(--s-24) 0 var(--s-16);
+    }
+
+    &__img {
+      height: 2.4rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .featured-in {
+    &__h6 {
       margin: var(--s-24) 0 var(--s-16);
     }
 
