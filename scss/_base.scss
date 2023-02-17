@@ -109,6 +109,10 @@ body {
 .row-center {
   justify-content: center !important;
 }
+
+.col-top {
+  align-self: top;
+}
 // =============================================== //
 // ////////////////// HELPERS END  /////////////// //
 // /////////////////////////////////////////////// //
@@ -133,6 +137,11 @@ body {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+}
+
+@mixin flex-center {
+  justify-content: space-between;
+  align-items: center;
 }
 // =============================================== //
 // /////////////////  MIXINS END ///////////////// //
