@@ -97,7 +97,8 @@
     &__nav {
       &__link:link,
       &__link:visited {
-        font-size: var(--fs-18);
+        font-size: var(--fs-20);
+        font-weight: 600;
       }
 
       &--column {

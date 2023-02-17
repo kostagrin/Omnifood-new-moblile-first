@@ -249,12 +249,29 @@
 
     &__btn-box {
       margin-top: var(--s-64);
+      display: flex;
+      justify-content: start;
+      gap: var(--s-32);
     }
 
     &__img {
       margin: 0 0 0 auto;
       padding: 0;
       width: 80%;
+    }
+
+    &__statistics {
+      display: flex;
+      align-items: center;
+      gap: var(--s-24);
+
+      &__people {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+      }
     }
   }
 
