@@ -24,6 +24,10 @@
 }
 
 @media only screen and (min-width: 0) {
+  .container {
+    max-width: 97%;
+  }
+
   .row,
   .flex-col {
     padding: 0 var(--s-24);
@@ -31,9 +35,25 @@
 }
 
 @media only screen and (min-width: 425px) {
+  .container {
+    max-width: 98%;
+  }
+
+  .row,
+  .flex-col {
+    padding: 0 var(--s-48);
+  }
 }
 
 @media only screen and (min-width: 768px) {
+  .container {
+    max-width: 95%;
+  }
+
+  .row,
+  .flex-col {
+    padding: 0 var(--s-64);
+  }
 }
 
 @media only screen and (min-width: 1024px) {

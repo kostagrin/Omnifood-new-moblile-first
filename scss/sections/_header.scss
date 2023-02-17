@@ -140,8 +140,8 @@
     }
 
     &__img {
-      padding: 0 var(--s-24);
-      margin-top: var(--s-32);
+      padding: 0 var(--s-32);
+      margin: var(--s-48) 0;
     }
 
     &__statistics {
@@ -160,8 +160,8 @@
     &__btn-box {
       flex-direction: row;
       justify-content: center;
-      gap: var(--s-16);
-      margin-top: var(--s-32);
+      gap: var(--s-24);
+      margin-top: var(--s-48);
       padding: 0 var(--s-44);
     }
 
@@ -220,14 +220,15 @@
   }
 
   .h1-subhead {
-    font-size: var(--fs-18);
+    font-size: var(--fs-20);
+    line-height: 1.8;
     text-align: center;
-    margin-top: var(--s-24);
+    margin-top: var(--s-32);
   }
 
   .btn:link,
   .btn:visited {
-    font-size: var(--fs-18);
+    font-size: var(--fs-20);
   }
 }
 
