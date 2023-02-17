@@ -16,10 +16,6 @@
   &__description {
     color: var(--color-text-light);
   }
-
-  &__img {
-    width: 100%;
-  }
 }
 
 @media only screen and (min-width: 0) {
@@ -30,8 +26,7 @@
       display: none;
     }
 
-    margin-top: var(--s-32);
-    padding-bottom: var(--s-32);
+    margin-top: var(--s-48);
 
     &__h2 {
       margin-top: var(--s-16);
@@ -60,6 +55,7 @@
 
     &__img-box {
       position: relative;
+      margin-top: var(--s-32);
       display: flex;
       justify-content: center;
 
@@ -91,7 +87,6 @@
     }
 
     &__img {
-      margin-top: var(--s-32);
       width: 45%;
     }
   }
@@ -103,6 +98,69 @@
     &--lg,
     &--xl {
       display: none;
+    }
+
+    &--md {
+      display: block;
+    }
+
+    margin-top: var(--s-128);
+
+    &__block-1 {
+      margin-top: var(--s-64);
+    }
+
+    &__block-2,
+    &__block-3 {
+      margin-top: var(--s-96);
+    }
+
+    &__img-box {
+      margin-top: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .how-it-works {
+    &__block-1,
+    &__block-2,
+    &__block-3 {
+      gap: var(--s-24);
+    }
+
+    &__block-2,
+    &__block-3 {
+      margin-top: var(--s-128);
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .how-it-works {
+    &__block-1 {
+      margin-top: var(--s-160);
+    }
+
+    &__block-2,
+    &__block-3 {
+      margin-top: var(--s-192);
+    }
+
+    &__img-box {
+      &::before {
+        width: 70%;
+        padding-bottom: 70%;
+      }
+
+      &::after {
+        width: 50%;
+        padding-bottom: 50%;
+      }
+    }
+
+    &__img {
+      width: 40%;
     }
   }
 }

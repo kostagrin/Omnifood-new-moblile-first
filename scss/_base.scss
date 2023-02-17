@@ -28,7 +28,7 @@ html {
     we calculate it in percentages: 10/16*100 = 62.5%.
     This approach will make it possible for a user to adjust
     default browser settings to his needs. */
-  font-size: 62.5% !important;
+  font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
