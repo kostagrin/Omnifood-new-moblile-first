@@ -42,11 +42,17 @@
   --color-accent-dark: #cf711f;
   --color-animate-before: #fdf2e9;
   --color-animate-after: #fae5d3;
+  --color-tag-vegetarian: #51cf66;
+  --color-tag-vegan: #94d82d;
+  --color-tag-paleo: #ffd43b;
 }
 
 @import "base";
 @import "layout";
+@import "typography";
 @import "./components/navbar";
+@import "./components/card";
 @import "./sections/header";
 @import "./sections/featured-in";
 @import "./sections/how-it-works";
+@import "./sections/meals";
