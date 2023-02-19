@@ -1,13 +1,4 @@
 .how-it-works {
-  &__h6 {
-    color: var(--color-accent);
-    text-transform: uppercase;
-  }
-
-  &__h2 {
-    font-weight: 800;
-  }
-
   &__step {
     color: var(--color-text-light);
     opacity: 0.5;
@@ -139,6 +130,8 @@
 
 @media only screen and (min-width: 1024px) {
   .how-it-works {
+    margin-top: var(--s-144);
+
     &__block-1 {
       margin-top: var(--s-160);
     }
@@ -163,5 +156,11 @@
     &__img {
       width: 40%;
     }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .how-it-works {
+    margin-top: var(--s-160);
   }
 }
