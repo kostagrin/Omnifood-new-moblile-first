@@ -1,0 +1,171 @@
+// /////////////////////////////////////////////// //
+// ///////////////  TYPOGRAPHY  ////////////////// //
+// =============================================== //
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  color: var(--color-text);
+}
+
+.h6 {
+  text-transform: uppercase;
+}
+
+.h6--accent {
+  color: var(--color-accent);
+}
+
+.h1-subhead {
+  color: var(--color-text-gray);
+}
+
+@media (min-width: 0) {
+  .h1 {
+    font-size: var(--fs-20);
+    line-height: 1.4;
+  }
+
+  .h2 {
+    font-size: var(--fs-18);
+    font-weight: 800;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+  }
+
+  .h3 {
+    font-size: var(--fs-16);
+  }
+
+  .h4 {
+    font-size: var(--fs-14);
+  }
+
+  .h5 {
+    font-size: var(--fs-12);
+  }
+
+  .h6 {
+    font-size: var(--fs-10);
+  }
+
+  .h1-subhead {
+    font-size: var(--fs-14);
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 425px) {
+  .h1 {
+    font-size: var(--fs-24);
+    letter-spacing: -0.5px;
+    font-weight: 800;
+  }
+
+  .h2 {
+    font-size: var(--fs-20);
+  }
+
+  .h3 {
+    font-size: var(--fs-18);
+  }
+
+  .h4 {
+    font-size: var(--fs-16);
+  }
+
+  .h5 {
+    font-size: var(--fs-14);
+  }
+
+  .h6 {
+    font-size: var(--fs-12);
+  }
+
+  .h1-subhead {
+    font-size: var(--fs-18);
+    line-height: 1.6;
+  }
+}
+
+@media (min-width: 768px) {
+  .h1 {
+    font-size: var(--fs-36);
+    line-height: 1.05;
+  }
+
+  .h2 {
+    font-size: var(--fs-30);
+  }
+
+  .h3 {
+    font-size: var(--fs-24);
+  }
+
+  .h4 {
+    font-size: var(--fs-18);
+  }
+
+  .h5 {
+    font-size: var(--fs-16);
+  }
+
+  .h6 {
+    font-size: var(--fs-14);
+  }
+
+  .h1-subhead {
+    line-height: 1.8;
+  }
+}
+
+@media (min-width: 1024px) {
+  .h1 {
+    font-size: var(--fs-44);
+    font-weight: 600;
+  }
+
+  .h2 {
+    font-size: var(--fs-36);
+  }
+
+  .h3 {
+    font-size: var(--fs-30);
+  }
+
+  .h4 {
+    font-size: var(--fs-24);
+  }
+
+  .h5 {
+    font-size: var(--fs-20);
+  }
+
+  .h6 {
+    font-size: var(--fs-18);
+  }
+}
+
+@media (min-width: 1200px) {
+  .h1 {
+    font-weight: 700;
+  }
+}
+
+// =============================================== //
+// ///////////////  TYPOGRAPHY END  ////////////// //
+// /////////////////////////////////////////////// //
+// *********************************************** //
