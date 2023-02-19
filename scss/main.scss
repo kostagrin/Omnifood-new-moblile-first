@@ -38,6 +38,7 @@
   --color-main-bg: #fdf2e9;
   --color-text: #333;
   --color-text-gray: #555;
+  --color-text-light: #777;
   --color-accent: #e67e22;
   --color-accent-dark: #cf711f;
   --color-animate-before: #fdf2e9;
@@ -55,4 +56,5 @@
 @import "./sections/header";
 @import "./sections/featured-in";
 @import "./sections/how-it-works";
+@import "./sections/testimonials";
 @import "./sections/meals";
