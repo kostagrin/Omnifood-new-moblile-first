@@ -45,25 +45,7 @@ body {
 // /////////////////////////////////////////////// //
 // //////////////  COMPONENTS  /////////////////// //
 // =============================================== //
-// BUTTONS
-.btn,
-.btn:link,
-.btn:visited {
-  position: relative;
-  display: inline-block;
-  text-decoration: none;
-  text-align: center;
-  color: var(--color-text);
-  background: none;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-}
-// BUTTONS END
+
 // =============================================== //
 // //////////////  COMPONENTS END  /////////////// //
 // /////////////////////////////////////////////// //
