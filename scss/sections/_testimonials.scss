@@ -53,6 +53,9 @@
   }
 
   @media only screen and (min-width: 1024px) {
+    -moz-column-gap: var(--s-12);
+    column-gap: var(--s-12);
+
     &__inner {
       grid-template-columns: 1.2fr 0.8fr;
       padding: var(--s-12) 0;
@@ -60,7 +63,14 @@
 
     &__left {
       align-content: center;
-      row-gap: var(--s-48);
+      //   gap: var(--s-48);
+      -moz-column-gap: var(--s-48);
+      column-gap: var(--s-48);
+      row-gap: var(--s-64);
+    }
+
+    &__header {
+      margin-bottom: var(--s-64);
     }
   }
 
@@ -71,13 +81,22 @@
   }
 
   @media only screen and (min-width: 1440px) {
+    -moz-column-gap: var(--s-24);
+    column-gap: var(--s-24);
+
     &__inner {
+      grid-template-columns: 1.1fr 0.9fr;
       padding-top: var(--s-16);
       padding-bottom: var(--s-16);
+      -moz-column-gap: var(--s-32);
+      column-gap: var(--s-32);
     }
 
     &__left {
-      row-gap: var(--s-64);
+      row-gap: var(--s-80);
+      -moz-column-gap: var(--s-96);
+      column-gap: var(--s-96);
+      padding-left: var(--s-48);
     }
   }
 }
@@ -91,7 +110,7 @@
   }
 
   &__img {
-    height: var(--fs-128);
+    height: var(--fs-98);
     @include img-round;
     margin: 0 auto;
   }
@@ -109,6 +128,27 @@
     color: var(--color-text-light);
   }
 
+  @media only screen and (min-width: 425px) {
+    &__img {
+      height: var(--fs-86);
+    }
+
+    &__text {
+      margin-top: var(--s-16);
+    }
+  }
+
+  @media only screen and (min-width: 640px) {
+    &:not(:first-of-type) {
+      margin-top: var(--s-64);
+    }
+
+    &__img {
+      height: var(--fs-74);
+      margin-left: var(--s-8);
+    }
+  }
+
   @media only screen and (min-width: 768px) {
     &__img {
       height: var(--fs-86);
@@ -121,14 +161,16 @@
     }
 
     &__img {
-      height: var(--fs-98);
+      height: var(--fs-74);
     }
 
-    &__text,
-    &__name {
+    &__text {
       margin-top: var(--s-16);
       font-size: var(--fs-16);
-      // line-height: 1.8;
+    }
+
+    &__name {
+      font-size: var(--fs-16);
     }
   }
 }
@@ -164,8 +206,8 @@
 
   @media only screen and (min-width: 425px) {
     grid-template-columns: repeat(4, 1fr);
-    margin: var(--s-64) auto 0;
-    padding: 0 var(--s-8) var(--s-8);
+    // padding: 0 var(--s-8) var(--s-8);
+    gap: 0.6rem;
   }
 
   @media only screen and (min-width: 768px) {
@@ -178,7 +220,7 @@
     align-items: center;
   }
 
-  @media only screen and (min-width: 1400px) {
+  @media only screen and (min-width: 1440px) {
     grid-template-columns: repeat(3, 1fr);
   }
 }
