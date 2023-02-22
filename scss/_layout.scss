@@ -19,11 +19,6 @@
   justify-content: center;
 }
 
-.box {
-  display: block;
-  overflow: hidden;
-}
-
 @media only screen and (min-width: 425px) {
   .container {
     max-width: 75%;
@@ -42,17 +37,11 @@
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1240px) {
   .container {
     max-width: 83%;
   }
 }
-
-// @media only screen and (min-width: 1240px) {
-//   .container {
-//     max-width: 130rem;
-//   }
-// }
 
 @media only screen and (min-width: 1440px) {
   .container {
