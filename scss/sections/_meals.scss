@@ -1,9 +1,5 @@
 .meals {
-  margin-top: var(--s-80);
-
-  &__h2 {
-    margin-top: var(--s-16);
-  }
+  margin-top: var(--s-96);
 
   &__cards {
     gap: var(--s-48);
@@ -26,9 +22,7 @@
   }
 
   @media only screen and (min-width: 425px) {
-    margin-top: var(--s-96);
-
-    &__cards--3 {
+    &__card-box-3 {
       display: flex;
     }
   }
@@ -40,16 +34,24 @@
       flex-direction: row;
       flex-wrap: wrap;
       gap: var(--s-16);
+    }
 
-      &--1,
-      &--2,
-      &--3 {
+    &__card-box {
+      &-1,
+      &-2,
+      &-3 {
         flex: 0;
         width: 48%;
       }
 
-      &--3 {
+      &-3 {
         margin-top: var(--s-48);
+      }
+    }
+
+    .card--3 {
+      &__title {
+        text-align: center;
       }
     }
 
@@ -59,10 +61,6 @@
   }
 
   @media only screen and (min-width: 768px) {
-    &__h4 {
-      text-align: center;
-    }
-
     &__list {
       padding-left: var(--s-32);
     }
@@ -74,20 +72,24 @@
     &__cards {
       flex-wrap: nowrap;
       justify-content: space-between;
+    }
 
-      &--1,
-      &--2,
-      &--3 {
+    &__card-box {
+      &-1,
+      &-2,
+      &-3 {
         flex: 1;
         width: 30%;
       }
 
-      &--3 {
+      &-3 {
         margin-top: 0;
+        align-items: start;
       }
     }
 
     &__list {
+      gap: var(--s-24);
       &-item {
         padding-left: var(--s-32);
       }
@@ -98,8 +100,6 @@
     margin-top: var(--s-160);
 
     &__list {
-      gap: var(--s-24);
-
       &-item {
         padding-left: var(--s-64);
         font-size: var(--fs-18);
@@ -109,6 +109,8 @@
 
   @media only screen and (min-width: 1440px) {
     &__list {
+      gap: var(--s-32);
+
       &-item {
         padding-left: var(--s-80);
       }
