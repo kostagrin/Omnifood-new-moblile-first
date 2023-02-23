@@ -113,7 +113,8 @@
     &__statistics {
       grid-row: 3;
       flex-direction: row-reverse;
-      justify-content: space-evenly;
+      justify-content: center;
+      gap: var(--s-24);
 
       &__people {
         img {
@@ -145,8 +146,8 @@
     }
 
     &__statistics {
-      gap: var(--s-16);
-      justify-content: space-between;
+      justify-content: center;
+      gap: var(--s-32);
 
       &__people {
         img {
