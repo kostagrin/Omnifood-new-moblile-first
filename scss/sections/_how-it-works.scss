@@ -171,6 +171,11 @@
   @media only screen and (min-width: 1200px) {
     margin-top: var(--s-160);
 
+    &__block-2,
+    &__block-3 {
+      margin-top: var(--s-144);
+    }
+
     &__img-box {
       &::before {
         width: 55%;
@@ -188,7 +193,19 @@
     }
   }
 
+  @media only screen and (min-width: 1240px) {
+    &__block-2,
+    &__block-3 {
+      margin-top: var(--s-160);
+    }
+  }
+
   @media only screen and (min-width: 1440px) {
+    &__block-2,
+    &__block-3 {
+      margin-top: var(--s-192);
+    }
+
     &__img-box {
       &::before {
         width: 42%;
