@@ -2,7 +2,7 @@
   // basic styles for all cards
   display: flex;
   flex-direction: column;
-
+  height: 100%;
   overflow: hidden;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -32,47 +32,48 @@
       color: var(--color-accent);
     }
 
-    &--meals-1,
-    &--meals-2,
-    &--meals-3 {
-    }
-
     &--meals-3 {
       gap: var(--s-16);
     }
-
-    &--cta {
-    }
   }
 
-  @media only screen and (min-width: 425px) {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0;
-
-    &--3 {
-      width: -webkit-fit-content;
-      width: -moz-fit-content;
-      width: fit-content;
-    }
-  }
+  // @media only screen and (min-width: 425px) {
+  // }
 
   @media only screen and (min-width: 640px) {
-    &--3 {
-      width: 31vw;
+    &__list {
+      &--meals-3 {
+        padding-left: var(--s-16);
+      }
     }
   }
 
   @media only screen and (min-width: 768px) {
-    &--3 {
-      // width: 50vw;
+    &__list {
+      margin-top: var(--s-24);
     }
   }
 
   @media only screen and (min-width: 1024px) {
-    &--3 {
-      justify-content: center;
+    &__list {
+      margin-top: var(--s-32);
+
+      &--meals-3 {
+        gap: var(--s-24);
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    &__list {
+      &--meals-1,
+      &--meals-2 {
+        gap: var(--s-24);
+      }
+
+      &-item {
+        font-size: var(--fs-18);
+      }
     }
   }
 }

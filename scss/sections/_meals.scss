@@ -2,6 +2,7 @@
   margin-top: var(--s-96);
 
   &__cards {
+    display: grid;
     gap: var(--s-48);
     margin-top: var(--s-48);
   }
@@ -20,7 +21,7 @@
 
     &-body {
       margin-top: var(--s-32);
-      padding: 0 var(--s-32);
+      padding: 0 10%;
     }
 
     &-tag {
@@ -52,8 +53,12 @@
       }
     }
 
-    &-title {
+    &-title:not(:last-child) {
       margin-top: var(--s-12);
+    }
+
+    &-title--3 {
+      text-align: center;
     }
   }
 
@@ -66,8 +71,14 @@
   }
 
   @media only screen and (min-width: 425px) {
+    &__card {
+      margin: auto 5%;
+      padding-left: 0;
+    }
+
     &__card-box-3 {
       display: flex;
+      justify-content: center;
     }
   }
 
@@ -75,83 +86,76 @@
     margin-top: var(--s-128);
 
     &__cards {
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: var(--s-16);
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--s-32);
+    }
+
+    &__card {
+      padding-bottom: var(--s-24);
     }
 
     &__card-box {
-      &-1,
-      &-2,
-      &-3 {
-        flex: 0;
-        width: 48%;
-      }
+      // &-1,
+      // &-2,
+      // &-3 {
+      // }
 
       &-3 {
+        grid-column: 1 / -1;
         margin-top: var(--s-48);
       }
     }
 
-    .card--3 {
-      &__title {
-        text-align: center;
-      }
-    }
+    &__card {
+      margin: auto;
 
-    &__list {
-      padding-left: var(--s-16);
+      &-title:not(:last-child) {
+        margin-top: var(--s-16);
+      }
     }
   }
 
   @media only screen and (min-width: 768px) {
-    &__list {
-      padding-left: var(--s-32);
+    &__cards {
+      grid-template-columns: repeat(2, 1fr) 0.8fr;
+      gap: var(--s-16);
+    }
+
+    &__card-box {
+      // &-1,
+      // &-2,
+      // &-3 {
+      // }
+
+      &-3 {
+        grid-column: 3;
+        margin-top: 0;
+      }
+    }
+
+    &__card {
+      padding-bottom: var(--s-16);
+      // padding-bottom: 0;
     }
   }
 
   @media only screen and (min-width: 1024px) {
     margin-top: var(--s-144);
-
-    &__cards {
-      flex-wrap: nowrap;
-      justify-content: space-between;
-    }
-
-    &__card-box {
-      &-1,
-      &-2,
-      &-3 {
-        flex: 1;
-        width: 30%;
-      }
-
-      &-3 {
-        margin-top: 0;
-        align-items: start;
-      }
-    }
-
-    &__list {
-      gap: var(--s-24);
-      &-item {
-        padding-left: var(--s-32);
-      }
-    }
   }
 
   @media only screen and (min-width: 1200px) {
     margin-top: var(--s-160);
 
-    &__list {
-      &-item {
-        padding-left: var(--s-64);
-        font-size: var(--fs-18);
-      }
+    &__cards {
+      gap: var(--s-32);
     }
   }
 
   @media only screen and (min-width: 1440px) {
+    &__cards {
+      margin-top: var(--s-64);
+      gap: var(--s-96);
+    }
     &__list {
       gap: var(--s-32);
 
