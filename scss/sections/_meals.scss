@@ -95,11 +95,6 @@
     }
 
     &__card-box {
-      // &-1,
-      // &-2,
-      // &-3 {
-      // }
-
       &-3 {
         grid-column: 1 / -1;
         margin-top: var(--s-48);
@@ -122,11 +117,6 @@
     }
 
     &__card-box {
-      // &-1,
-      // &-2,
-      // &-3 {
-      // }
-
       &-3 {
         grid-column: 3;
         margin-top: 0;
@@ -135,7 +125,6 @@
 
     &__card {
       padding-bottom: var(--s-16);
-      // padding-bottom: 0;
     }
   }
 
