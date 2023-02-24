@@ -1,2 +1,97 @@
-// .cta {
-// }
+.cta {
+  margin-top: var(--s-64);
+
+  &__cards {
+    margin-top: var(--s-48);
+    flex-direction: column;
+  }
+
+  &__card {
+    align-items: center;
+    // padding: var(--s-48);
+    width: 100%;
+
+    &--ouline {
+      border: 2px solid var(--color-animate-before);
+    }
+
+    &--bg {
+      border: 2px solid var(--color-animate-before);
+      background-color: var(--color-animate-before);
+    }
+
+    &__title {
+      color: var(--color-accent-dark);
+      text-transform: uppercase;
+    }
+
+    &__price {
+      margin-top: var(--s-32);
+      font-size: var(--fs-62);
+      font-weight: 600;
+      color: var(--color-text);
+
+      span {
+        font-size: var(--fs-30);
+      }
+    }
+
+    &__sub-price {
+      margin-top: var(--s-16);
+      font-size: var(--fs-16);
+      line-height: 1.6;
+      text-align: center;
+      color: var(--color-text-light);
+    }
+  }
+
+  &__list {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--s-16);
+    margin-top: var(--s-48);
+
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: var(--s-16);
+      font-size: var(--fs-14);
+      color: var(--color-text);
+    }
+
+    &__icon {
+    }
+  }
+
+  &__btn {
+    margin-top: var(--s-48);
+  }
+
+  // MEDIA QUERIES
+  @media only screen and (min-width: 425px) {
+  }
+
+  @media only screen and (min-width: 640px) {
+    margin-top: var(--s-80);
+  }
+
+  @media only screen and (min-width: 768px) {
+    margin-top: var(--s-128);
+  }
+
+  @media only screen and (min-width: 1024px) {
+  }
+
+  @media only screen and (min-width: 1200px) {
+    margin-top: var(--s-160);
+  }
+
+  @media only screen and (min-width: 1240px) {
+  }
+
+  @media only screen and (min-width: 1440px) {
+  }
+}
