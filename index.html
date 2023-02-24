@@ -7,9 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/main.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <!-- <link
     href="https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic"
-    rel="stylesheet" />
+    rel="stylesheet" /> -->
   <title>Omnifood starter</title>
 </head>
 
@@ -430,12 +435,52 @@
     <!-- SECTION TESTIMONIALS END -->
     <!-- ================================================================= -->
     <!-- SECTION CTA -->
-    <section class="cta d-none">
+    <section class="cta">
       <div class="container">
-        <div class="testimonials__header">
-          <h6 class="h6 testimonials__h6">Pricint</h6>
-          <h2 class="h2 testimonials__h2">Eating well without breaking the bank
+        <div class="section-header">
+          <h6 class="h6 h6--accent cta__h6">Pricing</h6>
+          <h2 class="h2 cta__h2">Eating well without breaking the bank
           </h2>
+        </div>
+
+        <div class="row cta__cards">
+          <div class="col d-flex">
+            <div class="card cta__card cta__card--ouline">
+              <h3 class="h3 cta__card__title">Starter</h3>
+              <p class="cta__card__price"><span>$</span>399</p>
+              <p class="cta__card__sub-price">per month. That's just $13 per meal!</p>
+              <ul class="card__list">
+                <li class="card__list__item"><ion-icon class="card__list__icon" name="checkmark-outline">
+                </ion-icon><span>1 meal per day</span></li>
+                <li class="card__list__item"><ion-icon class="card__list__icon" name="checkmark-outline">
+                </ion-icon><span>Order from 11am to 9pm</span></li>
+                <li class="card__list__item"><ion-icon class="card__list__icon" name="checkmark-outline">
+                </ion-icon><span>Delevery is free</span></li>
+                <li class="card__list__item"><ion-icon class="card__list__icon" name="close-outline"></ion-icon><span>&nbsp;</span></li>
+              </ul>
+              <a href="#" class="btn cta__btn btn--accent">Start eating well</a>
+            </div>
+          </div>
+          <div class="col d-flex">
+            <div class="card cta__card">
+              <div class="card cta__card cta__card--bg">
+                <h3 class="h3 cta__card__title">Complete</h3>
+                <p class="cta__card__price"><span>$</span>649</p>
+                <p class="cta__card__sub-price">per month. That's just $11 per meal!</p>
+                <ul class="card__list">
+                  <li class="card__list__item"><ion-icon class="card__list__icon" name="checkmark-outline">
+                  </ion-icon><span><b>2 meals</b> per day</span></li>
+                  <li class="card__list__item"><ion-icon class="card__list__icon" name="checkmark-outline">
+                  </ion-icon><span>Order <b>24/7</b></span></li>
+                  <li class="card__list__item"><ion-icon class="card__list__icon" name="checkmark-outline">
+                  </ion-icon><span>Delevery is free</span></li>
+                  <li class="card__list__item"><ion-icon class="card__list__icon" name="checkmark-outline">
+                  </ion-icon><span>Get access to latest recipes</span></li>
+                </ul>
+                <a href="#" class="btn cta__btn btn--accent">Start eating well</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
