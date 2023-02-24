@@ -37,7 +37,7 @@
   }
 }
 
-@media only screen and (min-width: 1240px) {
+@media only screen and (min-width: 1200px) {
   .container {
     max-width: 83%;
   }
@@ -59,7 +59,7 @@
     gap: var(--s-12);
   }
 
-  @media only screen and (min-width: 1240px) {
+  @media only screen and (min-width: 1200px) {
     gap: var(--s-16);
   }
 }
