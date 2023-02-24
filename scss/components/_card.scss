@@ -1,4 +1,5 @@
 .card {
+  // basic styles for all cards
   display: flex;
   flex-direction: column;
 
@@ -8,74 +9,39 @@
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
-  box-shadow: 0 1rem 2rem rgb(0, 0, 0, 8%);
 
-  &--3 {
-    box-shadow: none;
-    padding-left: var(--s-32);
-  }
-
-  &__body {
-    margin-top: var(--s-32);
-    padding: 0 var(--s-32);
-  }
-
-  &__img {
-    width: 100%;
-  }
-
-  &__title {
-    margin-top: var(--s-12);
-  }
-
-  &__tag {
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: var(--fs-12);
-    font-weight: 500;
-    padding: var(--s-4) var(--s-8);
-    border-radius: 1rem;
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -ms-border-radius: 1rem;
-    -o-border-radius: 1rem;
-
-    &:not(:last-of-type) {
-      margin-right: var(--s-12);
-    }
-
-    &--vegetarian {
-      background-color: var(--color-tag-vegetarian);
-    }
-
-    &--vegan {
-      background-color: var(--color-tag-vegan);
-    }
-
-    &--paleo {
-      background-color: var(--color-tag-paleo);
-    }
-  }
-
+  // common styles for card lists
   &__list {
-    margin-top: var(--s-32);
+    margin-top: var(--s-24);
     padding-bottom: var(--s-24);
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: var(--s-32);
 
-    &__item {
+    &-item {
       font-size: var(--fs-16);
       display: flex;
       align-items: center;
       gap: var(--s-12);
     }
 
-    &__icon {
+    &-icon {
       height: var(--fs-24);
       width: var(--fs-24);
       color: var(--color-accent);
+    }
+
+    &--meals-1,
+    &--meals-2,
+    &--meals-3 {
+    }
+
+    &--meals-3 {
+      gap: var(--s-16);
+    }
+
+    &--cta {
     }
   }
 
