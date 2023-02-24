@@ -35,6 +35,12 @@
     &--meals-3 {
       gap: var(--s-16);
     }
+
+    &--cta {
+      justify-content: center;
+      gap: var(--s-16);
+      margin-top: var(--s-32);
+    }
   }
 
   // @media only screen and (min-width: 425px) {
