@@ -47,15 +47,15 @@
     }
 
     &::before {
-      width: 80%;
-      padding-bottom: 80%;
+      width: 77%;
+      padding-bottom: 77%;
       background-color: var(--color-animate-before);
       z-index: -2;
     }
 
     &::after {
-      width: 55%;
-      padding-bottom: 55%;
+      width: 56%;
+      padding-bottom: 56%;
       background-color: var(--color-animate-after);
       z-index: -1;
     }
@@ -98,8 +98,8 @@
       }
 
       &::after {
-        width: 45%;
-        padding-bottom: 45%;
+        width: 43%;
+        padding-bottom: 43%;
       }
     }
 
@@ -130,17 +130,17 @@
     }
 
     &__img-box {
-      margin-top: 0;
+      margin-top: auto;
       align-items: center;
 
       &::before {
-        width: 67%;
-        padding-bottom: 67%;
+        width: 69%;
+        padding-bottom: 69%;
       }
 
       &::after {
-        width: 53%;
-        padding-bottom: 53%;
+        width: 50%;
+        padding-bottom: 50%;
       }
     }
 
@@ -164,6 +164,25 @@
     &__block-3 {
       gap: var(--fs-16);
     }
+
+    &__img-box {
+      margin-top: auto;
+      align-items: center;
+
+      &::before {
+        width: 66%;
+        padding-bottom: 66%;
+      }
+
+      &::after {
+        width: 48%;
+        padding-bottom: 48%;
+      }
+    }
+
+    &__img {
+      width: 38%;
+    }
   }
 
   @media only screen and (min-width: 1200px) {
@@ -176,18 +195,18 @@
 
     &__img-box {
       &::before {
-        width: 55%;
-        padding-bottom: 55%;
+        width: 53%;
+        padding-bottom: 53%;
       }
 
       &::after {
-        width: 42%;
-        padding-bottom: 42%;
+        width: 39%;
+        padding-bottom: 39%;
       }
     }
 
     &__img {
-      width: 33%;
+      width: 31%;
     }
   }
 
@@ -199,13 +218,13 @@
 
     &__img-box {
       &::before {
-        width: 42%;
-        padding-bottom: 42%;
+        width: 43%;
+        padding-bottom: 43%;
       }
 
       &::after {
-        width: 33%;
-        padding-bottom: 33%;
+        width: 31%;
+        padding-bottom: 31%;
       }
     }
 
