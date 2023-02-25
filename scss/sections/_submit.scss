@@ -1,0 +1,169 @@
+.submit {
+  display: grid;
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color-accent),
+    var(--color-accent-dark)
+  );
+  overflow: hidden;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-top: var(--s-80);
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.1);
+
+  &__img-box {
+    height: 34rem;
+    opacity: 0.7;
+    background-image: url("../img/eating.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__form-box {
+    margin-top: var(--s-24);
+    padding: var(--s-32);
+    display: grid;
+  }
+
+  &__header {
+  }
+
+  &__description {
+    margin-top: var(--s-16);
+    font-size: var(--fs-16);
+    line-height: 1.7;
+    color: var(--color-text);
+  }
+
+  &__form {
+    justify-self: center;
+    margin-top: var(--s-32);
+    display: grid;
+    gap: var(--s-24);
+
+    &-label {
+      font-size: var(--fs-14);
+      color: currentColor;
+    }
+
+    &-control,
+    &-select {
+      border: none;
+      width: 100%;
+      height: 3rem;
+      color: inherit;
+      font-size: var(--fs-16);
+      background-color: var(--color-animate-before);
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      outline: none;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    &-btn {
+      margin-top: var(--s-12);
+    }
+  }
+
+  @media only screen and (min-width: 425px) {
+    margin-top: var(--s-96);
+  }
+
+  @media only screen and (min-width: 640px) {
+    margin-top: var(--s-128);
+
+    &__img-box {
+      height: 45rem;
+    }
+
+    &__form {
+      grid-template-columns: repeat(2, 1fr);
+
+      &-control,
+      &-select {
+        border: none;
+        height: 4rem;
+
+        font-size: var(--fs-16);
+      }
+
+      &-btn {
+        margin-top: auto;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    grid-template-columns: 1.3fr 0.7fr;
+
+    &__img-box {
+      grid-column: 2;
+      grid-row: 1 / -1;
+      height: 38rem;
+    }
+
+    &__form-box {
+      grid-column: 1;
+      grid-row: 1 / -1;
+      margin-top: auto;
+      padding: var(--s-32);
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    margin-top: var(--s-144);
+    grid-template-columns: 1.2fr 0.8fr;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    margin-top: var(--s-160);
+
+    &__img-box {
+      height: 51rem;
+    }
+
+    &__form-box {
+      max-width: 60rem;
+    }
+
+    &__form {
+      grid-template-columns: 1fr;
+      width: 44rem;
+
+      &-btn {
+        margin-top: var(--s-16);
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1440px) {
+    &__img-box {
+      height: 51rem;
+    }
+
+    &__description {
+      margin-top: 0;
+    }
+
+    &__form {
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--s-32);
+      width: 100%;
+
+      &-box {
+        margin-top: 0;
+        padding: var(--s-48);
+      }
+
+      &-btn {
+        margin-top: 0;
+      }
+    }
+  }
+}

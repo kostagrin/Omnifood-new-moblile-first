@@ -39,6 +39,7 @@
   --color-text: #333;
   --color-text-gray: #555;
   --color-text-light: #777;
+  --color-btn-form: #45260a;
   --color-accent: #e67e22;
   --color-accent-dark: #cf711f;
   --color-animate-before: #fdf2e9;
@@ -60,3 +61,4 @@
 @import "./sections/testimonials";
 @import "./sections/meals";
 @import "./sections/cta";
+@import "./sections/submit";
