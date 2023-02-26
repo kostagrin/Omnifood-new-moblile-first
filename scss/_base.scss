@@ -134,6 +134,12 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
+@mixin footer-link-spacer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-12);
+}
 // =============================================== //
 // /////////////////  MIXINS END ///////////////// //
 // /////////////////////////////////////////////// //
