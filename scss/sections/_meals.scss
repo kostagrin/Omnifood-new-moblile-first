@@ -8,7 +8,12 @@
   }
 
   &__card {
-    box-shadow: 0 1rem 2rem rgb(0, 0, 0, 8%);
+    box-shadow: 0 1rem 2rem rgb(0, 0, 0, 0.06);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
 
     &--3 {
       box-shadow: none;
@@ -59,6 +64,16 @@
 
     &-title--3 {
       text-align: center;
+    }
+
+    &--1:hover,
+    &--2:hover {
+      transform: translateY(-2rem);
+      -webkit-transform: translateY(-2rem);
+      -moz-transform: translateY(-2rem);
+      -ms-transform: translateY(-2rem);
+      -o-transform: translateY(-2rem);
+      box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.08);
     }
   }
 
