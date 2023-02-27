@@ -31,23 +31,18 @@ html {
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
   box-sizing: border-box;
   font-family: "Rubik", sans-serif;
   scroll-behavior: smooth;
+  height: 100%;
+  position: relative;
 }
 // =============================================== //
 // ////////////////  BASICS END  ///////////////// //
-// /////////////////////////////////////////////// //
-// *********************************************** //
-// /////////////////////////////////////////////// //
-// //////////////  COMPONENTS  /////////////////// //
-// =============================================== //
-
-// =============================================== //
-// //////////////  COMPONENTS END  /////////////// //
 // /////////////////////////////////////////////// //
 // *********************************************** //
 // /////////////////////////////////////////////// //
@@ -108,50 +103,3 @@ body {
 // ////////////////// HELPERS END  /////////////// //
 // /////////////////////////////////////////////// //
 // *********************************************** //
-// /////////////////////////////////////////////// //
-// /////////////////  MIXINS  //////////////////// //
-// =============================================== //
-@mixin center-absolute {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-}
-
-@mixin img-round {
-  display: block;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-}
-
-@mixin row-space-btwn {
-  justify-content: space-between;
-  align-items: center;
-}
-
-@mixin footer-link-spacer {
-  display: flex;
-  flex-direction: column;
-  gap: var(--s-12);
-
-  @media only screen and (min-width: 768px) {
-    gap: var(--s-16);
-  }
-
-  @media only screen and (min-width: 1024px) {
-    gap: var(--s-24);
-  }
-
-  @media only screen and (min-width: 1440px) {
-    gap: var(--s-32);
-  }
-}
-// =============================================== //
-// /////////////////  MIXINS END ///////////////// //
-// /////////////////////////////////////////////// //
