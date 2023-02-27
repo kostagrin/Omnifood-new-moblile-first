@@ -4,7 +4,7 @@
   }
 
   padding-top: var(--s-80);
-  margin-bottom: var(--s-64);
+  margin-bottom: var(--s-32);
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -103,6 +103,7 @@
   }
 
   @media only screen and (min-width: 768px) {
+    margin-bottom: var(--s-48);
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
     row-gap: 0;
@@ -153,6 +154,7 @@
   }
 
   @media only screen and (min-width: 1200px) {
+    margin-bottom: var(--s-64);
     -moz-column-gap: var(--s-48);
     column-gap: var(--s-48);
   }
