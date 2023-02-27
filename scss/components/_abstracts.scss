@@ -1,0 +1,93 @@
+// /////////////////////////////////////////////// //
+// /////////////////  MIXINS  //////////////////// //
+// =============================================== //
+@mixin center-absolute {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+@mixin img-round {
+  display: block;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+@mixin row-space-btwn {
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin footer-link-spacer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-12);
+
+  @media only screen and (min-width: 768px) {
+    gap: var(--s-16);
+  }
+
+  @media only screen and (min-width: 1024px) {
+    gap: var(--s-24);
+  }
+
+  @media only screen and (min-width: 1440px) {
+    gap: var(--s-32);
+  }
+}
+// =============================================== //
+// /////////////////  MIXINS END ///////////////// //
+// /////////////////////////////////////////////// //
+// *********************************************** //
+// /////////////////////////////////////////////// //
+// ////////////////  KEYFRAMES /////////////////// //
+// =============================================== //
+@-webkit-keyframes display-nav {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem);
+    -webkit-transform: translateY(-3rem);
+    -moz-transform: translateY(-3rem);
+    -ms-transform: translateY(-3rem);
+    -o-transform: translateY(-3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+}
+
+@keyframes display-nav {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem);
+    -webkit-transform: translateY(-3rem);
+    -moz-transform: translateY(-3rem);
+    -ms-transform: translateY(-3rem);
+    -o-transform: translateY(-3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+}
+// =============================================== //
+// ///////////////  KEYFRAMES END //////////////// //
+// /////////////////////////////////////////////// //

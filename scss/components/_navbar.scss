@@ -1,84 +1,101 @@
-@media only screen and (min-width: 0) {
-  .navbar {
-    height: var(--s-64);
-    padding: 0 var(--s-32);
-    background-color: var(--color-main-bg);
+.navbar {
+  height: var(--s-64);
+  padding: 0 var(--s-32);
+  background-color: var(--color-main-bg);
 
-    &__nav {
-      list-style: none;
+  &__nav {
+    list-style: none;
 
-      &__link:link,
-      &__link:visited {
-        display: inline-block;
-        text-decoration: none;
-        font-size: var(--fs-20);
-        font-weight: 500;
-        color: var(--color-text);
-        transition: all 0.3s;
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        -ms-transition: all 0.3s;
-        -o-transition: all 0.3s;
-      }
-
-      &__link:hover,
-      &__link:active {
-        color: var(--color-accent);
-      }
-    }
-
-    &__nav--row {
-      display: none;
-    }
-
-    &__nav--column {
-      position: absolute;
-      display: flex;
-      flex-direction: column;
-      gap: var(--s-48);
-      @include center-absolute();
-    }
-
-    &__logo-box {
+    &__link:link,
+    &__link:visited {
       display: inline-block;
+      text-decoration: none;
+      font-size: var(--fs-20);
+      font-weight: 500;
+      color: var(--color-text);
+      transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
     }
 
-    &__logo-img {
-      display: block;
-      height: var(--fs-18);
-    }
-
-    &__btn {
-      &-icon {
-        width: var(--fs-36);
-        height: var(--fs-36);
-      }
-
-      &--burger,
-      &--close {
-        display: flex;
-      }
+    &__link:hover,
+    &__link:active {
+      color: var(--color-accent);
     }
   }
-}
 
-// @media only screen and (min-width: 425px) {}
+  &__nav--row {
+    display: none;
+  }
 
-@media only screen and (min-width: 768px) {
-  .navbar {
-    height: var(--s-80);
-    padding: 0 var(--s-48);
+  &__nav--column {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--s-64);
+    z-index: 1;
+    background: rgba(#e67e22, 0.85);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    visibility: visible;
+    pointer-events: auto;
+    animation: display-nav 0.2s ease-in-out forwards;
+    -webkit-animation: display-nav 0.2s ease-in-out forwards;
+  }
 
+  &__logo-box {
+    display: inline-block;
+  }
+
+  &__logo-img {
+    display: block;
+    height: var(--fs-18);
+  }
+
+  &__btn {
+    z-index: 2;
+
+    &-icon {
+      width: var(--fs-36);
+      height: var(--fs-36);
+    }
+
+    &--burger,
+    &--close {
+      display: flex;
+    }
+
+    // &--close {
+    //   position: fixed;
+    //   right: 7.2rem;
+    //   top: 2rem;
+    // }
+  }
+
+  @media only screen and (min-width: 425px) {
+    &__nav--column {
+      justify-content: center;
+      gap: var(--s-64);
+    }
+  }
+
+  @media only screen and (min-width: 640px) {
     &__nav--column {
       align-items: flex-end;
-      gap: var(--s-48);
-      right: 0;
-      transform: translate(0, -50%);
-      -webkit-transform: translate(0, -50%);
-      -moz-transform: translate(0, -50%);
-      -ms-transform: translate(0, -50%);
-      -o-transform: translate(0, -50%);
-      margin-right: var(--s-48);
+      justify-content: flex-start;
+      gap: var(--s-80);
+      padding-top: var(--s-128);
+      padding-right: var(--s-64);
     }
 
     &__logo-img {
@@ -90,24 +107,36 @@
       height: var(--fs-44);
     }
   }
-}
 
-@media only screen and (min-width: 1024px) {
-  .navbar {
+  @media only screen and (min-width: 768px) {
+    height: var(--s-80);
+    padding: 0 var(--s-48);
+
+    &__nav--column {
+      padding-right: var(--s-80);
+    }
+
+    &__logo-img {
+      height: var(--fs-20);
+    }
+
+    .icon {
+      width: var(--fs-44);
+      height: var(--fs-44);
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
     &__nav {
       &__link:link,
       &__link:visited {
         font-size: var(--fs-20);
         font-weight: 600;
       }
-
-      &--column {
-        display: none !important;
-      }
     }
 
     &__btn {
-      display: none;
+      display: none !important;
     }
 
     &__nav--row {
