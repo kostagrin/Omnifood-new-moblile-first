@@ -4,7 +4,7 @@
   }
 
   padding-top: var(--s-80);
-  margin-bottom: var(--s-32);
+  padding-bottom: var(--s-24);
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -97,18 +97,21 @@
   }
 
   @media only screen and (min-width: 640px) {
+    row-gap: var(--s-64);
+    padding-bottom: var(--s-32);
+
     &__nav {
       margin-top: var(--s-24);
     }
   }
 
   @media only screen and (min-width: 768px) {
-    margin-bottom: var(--s-48);
+    padding-bottom: var(--s-48);
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
     row-gap: 0;
-    -moz-column-gap: var(--s-24);
-    column-gap: var(--s-24);
+    -moz-column-gap: var(--s-32);
+    column-gap: var(--s-32);
 
     &__logo-col {
       grid-row: 1;
@@ -154,7 +157,7 @@
   }
 
   @media only screen and (min-width: 1200px) {
-    margin-bottom: var(--s-64);
+    padding-bottom: var(--s-64);
     -moz-column-gap: var(--s-48);
     column-gap: var(--s-48);
   }
