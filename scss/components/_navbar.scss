@@ -68,18 +68,11 @@
     &-icon {
       width: var(--fs-36);
       height: var(--fs-36);
-    }
 
-    &--burger,
-    &--close {
-      display: flex;
+      &[name="close-outline"] {
+        display: none;
+      }
     }
-
-    // &--close {
-    //   position: fixed;
-    //   right: 7.2rem;
-    //   top: 2rem;
-    // }
   }
 
   @media only screen and (min-width: 425px) {
@@ -102,9 +95,11 @@
       height: var(--fs-20);
     }
 
-    .icon {
-      width: var(--fs-44);
-      height: var(--fs-44);
+    &__btn {
+      &-icon {
+        width: var(--fs-44);
+        height: var(--fs-44);
+      }
     }
   }
 
@@ -118,11 +113,6 @@
 
     &__logo-img {
       height: var(--fs-20);
-    }
-
-    .icon {
-      width: var(--fs-44);
-      height: var(--fs-44);
     }
   }
 
