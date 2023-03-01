@@ -17,6 +17,12 @@
   box-sizing: inherit;
 }
 
+*:focus {
+  // outline: 0.5rem solid var(--color-btn-form);
+  // outline-offset: 0.5rem;
+  box-shadow: 0 0 0 0.5rem rgba(69, 38, 10, 0.5);
+}
+
 // DEFENITION OF 1rem
 html {
   /* 1rem = 10px. This logic makes it easy to convert all
