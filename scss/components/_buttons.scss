@@ -65,3 +65,36 @@
   color: var(--color-btn-form);
   background-color: var(--color-animate-before);
 }
+
+.navbar__nav__link:link,
+.navbar__nav__link:visited {
+  padding: var(--s-12) var(--s-24);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.footer__logo-box:link,
+.footer__logo-box:visited,
+.footer__link:link,
+.footer__link:visited {
+  padding: var(--s-4) var(--s-8);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.footer__social-link:link,
+.footer__social-link:visited {
+  display: flex;
+  padding: 4px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
