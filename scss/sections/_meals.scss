@@ -85,6 +85,30 @@
     }
   }
 
+  &__btn {
+    &:link,
+    &:visited {
+      margin-top: var(--s-16);
+      font-size: var(--fs-18);
+      text-decoration: none;
+      color: var(--color-accent);
+      font-weight: normal;
+      border-bottom: 1px solid var(--color-accent);
+      padding-bottom: 2px;
+      transition: all 0.2s;
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      -ms-transition: all 0.2s;
+      -o-transition: all 0.2s;
+    }
+
+    &:hover,
+    &:active {
+      border-bottom: 1px solid transparent;
+      word-spacing: 2px;
+    }
+  }
+
   @media only screen and (min-width: 425px) {
     &__card {
       margin: auto 5%;
@@ -141,6 +165,13 @@
     &__card {
       padding-bottom: var(--s-16);
     }
+
+    &__btn {
+      &:link,
+      &:visited {
+        margin-top: var(--s-48);
+      }
+    }
   }
 
   @media only screen and (min-width: 1024px) {
@@ -152,6 +183,14 @@
 
     &__cards {
       gap: var(--s-32);
+    }
+
+    &__btn {
+      &:link,
+      &:visited {
+        margin-top: var(--s-64);
+        font-size: var(--fs-20);
+      }
     }
   }
 
@@ -165,6 +204,13 @@
 
       &-item {
         padding-left: var(--s-80);
+      }
+    }
+
+    &__btn {
+      &:link,
+      &:visited {
+        font-size: var(--fs-24);
       }
     }
   }
