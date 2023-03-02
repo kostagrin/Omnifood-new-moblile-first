@@ -39,6 +39,29 @@
     grid-column: 5 / 7;
   }
 
+  &__logo-box:link,
+  &__logo-box:visited,
+  &__link:link,
+  &__link:visited {
+    padding: var(--s-4) var(--s-8);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+
+  &__social-link:link,
+  &__social-link:visited {
+    display: flex;
+    padding: 4px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+  }
+
   &__logo-img {
     height: var(--fs-14);
   }
@@ -143,6 +166,7 @@
   @media only screen and (min-width: 1024px) {
     -moz-column-gap: var(--s-32);
     column-gap: var(--s-32);
+
     &__copyright,
     &__address,
     &__link:link,
