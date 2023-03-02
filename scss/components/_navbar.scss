@@ -1,10 +1,12 @@
 .navbar {
   height: var(--s-64);
   padding: 0 var(--s-32);
+  justify-content: space-between;
   background-color: var(--color-main-bg);
 
   &__nav {
     list-style: none;
+    display: none;
 
     &__link:link,
     &__link:visited {
@@ -13,6 +15,12 @@
       font-size: var(--fs-20);
       font-weight: 500;
       color: var(--color-text);
+      padding: var(--s-12) var(--s-24);
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
       transition: all 0.3s;
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
@@ -26,31 +34,38 @@
     }
   }
 
-  &__nav--row {
-    display: none;
-  }
-
-  &__nav--column {
-    position: fixed;
+  &__nav-display &__nav {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--s-64);
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     width: 100%;
     height: 100vh;
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: var(--s-64);
-    z-index: 1;
-    background: rgba(#e67e22, 0.85);
+    background: rgba(#fff, 0.85);
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
-    visibility: visible;
-    pointer-events: auto;
     animation: display-nav 0.2s ease-in-out forwards;
     -webkit-animation: display-nav 0.2s ease-in-out forwards;
+  }
+
+  &__nav-display &__btn {
+    z-index: 1;
+
+    &-icon {
+      &[name="menu-outline"] {
+        display: none;
+      }
+
+      &[name="close-outline"] {
+        display: inline-block;
+      }
+    }
   }
 
   &__logo-box {
@@ -63,7 +78,7 @@
   }
 
   &__btn {
-    z-index: 2;
+    padding: 0;
 
     &-icon {
       width: var(--fs-36);
@@ -76,14 +91,14 @@
   }
 
   @media only screen and (min-width: 425px) {
-    &__nav--column {
+    &__nav {
       justify-content: center;
       gap: var(--s-64);
     }
   }
 
   @media only screen and (min-width: 640px) {
-    &__nav--column {
+    &__nav {
       align-items: flex-end;
       justify-content: flex-start;
       gap: var(--s-80);
@@ -118,6 +133,15 @@
 
   @media only screen and (min-width: 1024px) {
     &__nav {
+      display: inline-flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--s-16);
+      padding: 0;
+    }
+
+    &__nav {
       &__link:link,
       &__link:visited {
         font-size: var(--fs-20);
@@ -128,10 +152,16 @@
     &__btn {
       display: none !important;
     }
+  }
 
-    &__nav--row {
-      display: inline-flex;
-      align-items: center;
+  @media only screen and (min-width: 1200px) {
+    &__nav {
+      gap: var(--s-24);
+    }
+  }
+
+  @media only screen and (min-width: 1440px) {
+    &__nav {
       gap: var(--s-48);
     }
   }
